@@ -1,16 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {Image, Platform, StyleSheet, Text, View, TouchableWithoutFeedback} from 'react-native';
-import IconEntypo from 'react-native-vector-icons/Entypo';
+import {Image, StyleSheet, Text, View, TouchableWithoutFeedback} from 'react-native';
 import IconFeather from 'react-native-vector-icons/Feather';
-import { channels } from '../data';
 
 class Channel extends Component {
 
@@ -21,7 +11,6 @@ class Channel extends Component {
   render() {
     const { channel, isSelectedChannel } = this.props
 
-    console.log(isSelectedChannel)
     return (
       <TouchableWithoutFeedback onPress={this._changeChannel}>
         <View style={[styles.container, isSelectedChannel && styles.selectedContainer]}>
